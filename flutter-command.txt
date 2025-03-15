@@ -1,0 +1,8 @@
+flutter deivce check command : flutter devices
+apk phone e run korar command: flutter run
+Chrome te run korte chaile : flutter run -d chrome
+build full apk : flutter build apk --release
+flutter  apk direct install android phone : flutter install
+pubspecy yml update korar jonno- flutter pub get
+
+
