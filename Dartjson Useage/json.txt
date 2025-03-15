@@ -1,0 +1,9 @@
+lvb — ListView.builder কোড তৈরি করবে।
+gvb — GridView.builder কোড তৈরি করবে।
+col — Column widget তৈরি করবে।
+row — Row widget তৈরি করবে।
+con — Container widget তৈরি করবে।
+tf — TextField widget তৈরি করবে।
+sw — Stateless widget template তৈরি করবে।
+fw — Stateful widget template তৈরি করবে।
+exp — Expanded widget তৈরি করবে।
