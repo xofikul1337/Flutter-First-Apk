@@ -1,0 +1,128 @@
+{
+  "ListView.builder Shortcut": {
+    "prefix": "lvb",
+    "body": [
+      "ListView.builder(",
+      "  itemCount: ${1:10},",
+      "  itemBuilder: (context, index) {",
+      "    return ListTile(",
+      "      title: Text('Item \\$index'),",
+      "    );",
+      "  },",
+      ")"
+    ],
+    "description": "ListView.builder shortcut"
+  },
+  "GridView.builder Shortcut": {
+    "prefix": "gvb",
+    "body": [
+      "GridView.builder(",
+      "  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(",
+      "    crossAxisCount: ${1:2},",
+      "    crossAxisSpacing: 10.0,",
+      "    mainAxisSpacing: 10.0",
+      "  ),",
+      "  itemCount: ${2:10},",
+      "  itemBuilder: (context, index) {",
+      "    return Card(",
+      "      child: Center(",
+      "        child: Text('Item \\$index'),",
+      "      ),",
+      "    );",
+      "  },",
+      ")"
+    ],
+    "description": "GridView.builder shortcut"
+  },
+  "Column Shortcut": {
+    "prefix": "col",
+    "body": [
+      "Column(",
+      "  children: [",
+      "    ${1:Child widget},",
+      "  ],",
+      ")"
+    ],
+    "description": "Column widget shortcut"
+  },
+  "Row Shortcut": {
+    "prefix": "row",
+    "body": [
+      "Row(",
+      "  children: [",
+      "    ${1:Child widget},",
+      "  ],",
+      ")"
+    ],
+    "description": "Row widget shortcut"
+  },
+  "Container Shortcut": {
+    "prefix": "con",
+    "body": [
+      "Container(",
+      "  ${1:child},",
+      "  ${2:decoration},",
+      "  ${3:padding},",
+      "  ${4:margin},",
+      ")"
+    ],
+    "description": "Container widget shortcut"
+  },
+  "TextField Shortcut": {
+    "prefix": "tf",
+    "body": [
+      "TextField(",
+      "  decoration: InputDecoration(",
+      "    labelText: '${1:Label}',",
+      "    hintText: '${2:Hint}',",
+      "  ),",
+      "  onChanged: (text) {",
+      "    ${3:// Handle text input}",
+      "  },",
+      ")"
+    ],
+    "description": "TextField widget shortcut"
+  },
+  "Stateless Widget Shortcut": {
+    "prefix": "sw",
+    "body": [
+      "class ${1:MyWidget} extends StatelessWidget {",
+      "  const ${1:MyWidget}({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container};",
+      "  }",
+      "}"
+    ],
+    "description": "Stateless widget shortcut"
+  },
+  "Stateful Widget Shortcut": {
+    "prefix": "fw",
+    "body": [
+      "class ${1:MyStatefulWidget} extends StatefulWidget {",
+      "  const ${1:MyStatefulWidget}({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  _${1:MyStatefulWidget}State createState() => _${1:MyStatefulWidget}State();",
+      "}",
+      "",
+      "class _${1:MyStatefulWidget}State extends State<${1:MyStatefulWidget}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container};",
+      "  }",
+      "}"
+    ],
+    "description": "Stateful widget shortcut"
+  },
+  "Expanded Shortcut": {
+    "prefix": "exp",
+    "body": [
+      "Expanded(",
+      "  child: ${1:Child widget},",
+      ")"
+    ],
+    "description": "Expanded widget shortcut"
+  }
+}
