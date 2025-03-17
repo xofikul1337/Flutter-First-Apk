@@ -50,9 +50,26 @@ class VisaCard extends StatelessWidget {
           children: [
            const Align(
               alignment: Alignment(-0.9, 0.9),
-              child: Text('Shofikul Islam'),
+              child: Text('Shofikul Islam',style: TextStyle(color: Colors.white,fontSize: 18, fontWeight: FontWeight.bold),),
+            ),
+            Align(
+              alignment: Alignment(-0.9, 0.1),
+              child:Padding(padding: EdgeInsets.all(8),
+              
+             child:  CircleAvatar(
+                backgroundImage:NetworkImage('https://i.postimg.cc/cC9ZXzKC/image.png') ,
+
+              )
             )
-          
+            ),
+            Align(
+              alignment: Alignment(0.9, 0.9),
+              child: Text('VISA',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color:Colors.white),),
+            ),
+              Align(
+              alignment: Alignment(-0.9, 0.6),
+              child: Text('1212 4545 4545 4545',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color:Colors.white),),
+            )
           ],
         ),
       ),
